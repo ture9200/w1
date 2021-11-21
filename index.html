@@ -16,11 +16,11 @@
 
 </style>-->
 
-<div class="d-flex" id="wrapper">
+<div class="d-flex" id="wrapper" >
 
     <!-- Sidebar-->
-    <div class="border-end bg-white" id="sidebar-wrapper">
-        <div class="sidebar-heading border-bottom bg-light"><a href="index.html"> Team2 Cafe</a></div>
+    <div class="border-end bg-white" id="sidebar-wrapper"style="width:10%">
+        <div class="sidebar-heading border-bottom bg-light" style="height:9%; text-align: center;"><a href="index.html"> Team2 Cafe</a></div>
         <div class="list-group list-group-flush">
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Coffee.html">Coffee</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Flatccino.html">Flatccino</a>
@@ -41,10 +41,10 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#!">Notice</a>
+                                <a class="dropdown-item" href="#!">FAQ</a>
+                                <a class="dropdown-item" href="#!">News & Notice</a>
+                               <!-- <div class="dropdown-divider"></div>-->
                                 <a class="dropdown-item" href="#!">Map</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#!">Job opportunities</a>
                             </div>
                         </li>
                     </ul>
@@ -99,6 +99,13 @@
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 <script>
+    $("#sidebarToggle").click(function () {
+        if ($("#sidebar-wrapper").hasClass("hide"))
+            $("#sidebar-wrapper").removeClass("hide");
+        else
+            $("#sidebar-wrapper").addClass("hide");
+    });
+
 </script>
 
 </body>
